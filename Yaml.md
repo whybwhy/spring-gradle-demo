@@ -50,9 +50,10 @@ public class YamlConfig {
     @Value("${spring.profiles}") private String profile;
     @Value("${spring.datasource.name}") private String datasourceName;
 }
+// @SpringBootApplication 에서 resources 를 자동으로 로딩하는 듯하다.
+// @Setter가 없어도 가능 @Value에서 Setter의 가능을 하는 듯 하다.
 </pre>
--- @SpringBootApplication 에서 resources 를 자동으로 로딩하는 듯하다.
--- @Setter가 없어도 가능 @Value에서 Setter의 가능을 하는 듯 하다.
+  
 
 * 방법 2 @ConfigurationProperties
 <pre>
@@ -87,7 +88,7 @@ public class YamlConfig {
 </pre>
 
 # Junit 실행
-* 트러블 슈팅
+
 Gradle Build 실패로 dependencies 추가
 <pre>
 dependencies {
@@ -103,6 +104,7 @@ dependencies {
 //@SpringBootTest(properties = {"classpath:application.yml"} )
 //@WebMvcTest(controllers = {YamlController.class}, properties = {"classpath:application.yml"})
 </pre>
+[reference](http://blog.naver.com/PostView.nhn?blogId=kkforgg&logNo=221261060159&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
 
 # Properties + Intellij plugin
 [intellij-Assistant](https://cheese10yun.github.io/intellij-Assistant/)
