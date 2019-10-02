@@ -69,6 +69,9 @@ public class YamlConfig {
 * 방법 3
     두 방법을 혼합하여 사용 가능
     
+[reference](https://jeong-pro.tistory.com/159)<br/>
+[reference](https://effectivesquid.tistory.com/m/36)
+
 # 실행
 <pre>
     // 터미널 (application.yml 보다 우선순위가 높다)

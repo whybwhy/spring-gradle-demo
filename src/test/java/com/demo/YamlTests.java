@@ -62,18 +62,4 @@ public class YamlTests {
         MvcResult response = mock.perform(get("/yml-multi-setting")).andReturn();
         System.out.println(response.getResponse().getContentAsString());
     }
-
-
-    // TODO properties
-
-
-    // TODO 이름 바꾸기
-    // https://jekalmin.tistory.com/entry/Spring-Boot-yaml-%EC%84%A4%EC%A0%95%ED%8C%8C%EC%9D%BC-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0ConfigurationProperties
-
-    // TODO NEXT https://www.donnert.net/81
-    // TODO 정리 할 것
-    //  https://docs.spring.io/spring-boot/docs/2.1.8.RELEASE/reference/html/configuration-metadata.html#configuration-metadata-annotation-processor
-
-    // https://jeong-pro.tistory.com/159
-    // https://effectivesquid.tistory.com/m/36
 }
