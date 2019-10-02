@@ -1,5 +1,8 @@
 <h4> Yaml
 
+# XML vs JSON vs YAML 
+![비교](https://user-images.githubusercontent.com/2027097/66022120-e7fb4480-e527-11e9-9f2f-194701b44b58.png)
+
 # build.gradle 
 <pre>
     dependencies {
@@ -111,7 +114,5 @@ dependencies {
 
 # Properties + Intellij plugin
 [intellij-Assistant](https://cheese10yun.github.io/intellij-Assistant/)
-
-
 
 
