@@ -1,0 +1,33 @@
+env:
+  servers:
+    - dev.example.com
+    - prod.example.com
+
+
+sample:
+  data:
+    id: "whybwhy"
+    age: 39
+
+spring:
+  profiles:
+    active: live
+---
+spring:
+  profiles: local
+  datasource:
+    name: whybwhy-dev
+  jpa:
+    generate-ddl: true
+---
+spring:
+  profiles: live
+  datasource:
+    name: whybwhy-live
+    jpa:
+      generate-ddl: true
+
+
+
+
+
