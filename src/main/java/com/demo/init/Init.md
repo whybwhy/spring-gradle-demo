@@ -9,7 +9,6 @@
    
 
 # @PostConstruct & @Destory
-
+ - https://github.com/whybwhy/spring-gradle-demo/blob/master/src/main/java/com/demo/init/PostConstructService1.java
 # implements InitializingBean & DisposableBean
-
-
+ - https://github.com/whybwhy/spring-gradle-demo/blob/master/src/main/java/com/demo/init/InitAndDestoryService.java
