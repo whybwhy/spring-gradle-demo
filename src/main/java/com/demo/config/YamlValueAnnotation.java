@@ -10,7 +10,7 @@ import java.util.List;
 
 @Component
 @Getter
-public class MixedYamlConfig {
+public class YamlValueAnnotation {
     @Value("${sample.data.id}") private String id;
     @Value("${sample.data.age}") private String age;
     @Value("${spring.profiles}") private String profile;

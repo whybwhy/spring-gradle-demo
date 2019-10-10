@@ -11,6 +11,6 @@ import java.util.List;
 @ConfigurationProperties(prefix = "env")
 @Getter
 @Setter
-public class YamlConfig {
+public class YamlConfigration {
     private List<String> servers;
 }
