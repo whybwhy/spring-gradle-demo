@@ -6,9 +6,9 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ValuePropertiesRunner implements ApplicationRunner {
+public class PropertiesValueAnnotationRunner implements ApplicationRunner {
     @Autowired
-    ValueProperties properties;
+    PropertiesValueAnnotation properties;
 
     //@Setter(onMethod_ = @Autowired)
     //BaseProperties properties;

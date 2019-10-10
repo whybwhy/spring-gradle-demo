@@ -6,10 +6,10 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ConfigrationPropertiesRunner implements ApplicationRunner {
+public class PropertiesConfigrationRunner implements ApplicationRunner {
 
     @Autowired
-    ConfigrationProperties properties;
+    PropertiesConfigration properties;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {

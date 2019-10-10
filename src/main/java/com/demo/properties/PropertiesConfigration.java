@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Component
 @ConfigurationProperties(prefix = "sample.data")
-public class ConfigrationProperties {
+public class PropertiesConfigration {
     private String id;
     private int age;
 }

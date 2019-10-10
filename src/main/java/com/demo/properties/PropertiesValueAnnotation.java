@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Getter
-public class ValueProperties {
+public class PropertiesValueAnnotation {
     @Value("${sample.data.id}")
     private String id;
     @Value("${sample.data.age}")
