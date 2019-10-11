@@ -1,14 +1,12 @@
 package com.demo;
 
-import com.demo.config.MixedYamlConfig;
-import com.demo.config.YamlConfig;
-import com.demo.controller.YamlController;
+import com.demo.resources.YamlValueAnnotation;
+import com.demo.resources.YamlConfigration;
 import lombok.Setter;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.TestPropertySource;
@@ -29,10 +27,10 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 public class YamlTests {
 
     @Setter(onMethod_ = @Autowired)
-    YamlConfig yamlConfig;
+    YamlConfigration yamlConfigration;
 
     @Setter(onMethod_ = @Autowired)
-    MixedYamlConfig mixedYamlConfig;
+    YamlValueAnnotation yamlValueAnnotation;
 
     @Autowired
     MockMvc mock;
@@ -40,7 +38,7 @@ public class YamlTests {
     // TODO List 데이터 테스트
     @Test
     public void modelA() throws Exception {
-        for (String env : yamlConfig.getServers()) {
+        for (String env : yamlConfigration.getServers()) {
             System.out.println(env);
         }
 
@@ -52,8 +50,8 @@ public class YamlTests {
     // TODO 2 Depth 이상의 데이터 테스트
     @Test
     public void modelB() {
-        System.out.println(mixedYamlConfig.getAge());
-        System.out.println(mixedYamlConfig.getId());
+        System.out.println(yamlValueAnnotation.getAge());
+        System.out.println(yamlValueAnnotation.getId());
     }
 
     // TODO 파일 분리 테스트 & Build 테스트

@@ -1,22 +1,21 @@
 package com.demo.controller;
 
-import com.demo.config.MixedYamlConfig;
-import com.demo.config.YamlConfig;
+import com.demo.resources.YamlValueAnnotation;
+import com.demo.resources.YamlConfigration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class YamlController {
     @Autowired
-    YamlConfig yamlConfig;
+    YamlConfigration yamlConfigration;
     @Autowired
-    MixedYamlConfig mixedYamlConfig;
+    YamlValueAnnotation yamlValueAnnotation;
 
     @RequestMapping("/yml")
     public String modelA() {
-        return yamlConfig.getServers().toString();
+        return yamlConfigration.getServers().toString();
     }
 
     /**
@@ -24,7 +23,7 @@ public class YamlController {
      */
     @RequestMapping("/yml-multi-setting")
     public String modelB() {
-        return mixedYamlConfig.getDatasourceName();
+        return yamlValueAnnotation.getDatasourceName();
     }
 
 }
