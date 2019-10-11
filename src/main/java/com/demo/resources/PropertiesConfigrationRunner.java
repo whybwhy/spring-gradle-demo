@@ -1,4 +1,4 @@
-package com.demo.properties;
+package com.demo.resources;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
