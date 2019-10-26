@@ -5,7 +5,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SampleClassRunner implements ApplicationRunner {
+public class ObjectsClassRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
