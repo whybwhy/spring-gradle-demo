@@ -2,8 +2,9 @@ package com.demo.base.lambda;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.stereotype.Component;
 
-
+@Component
 class TestImpl implements Testable {
     @Override
     public int plus(int a, int b) {
@@ -11,6 +12,7 @@ class TestImpl implements Testable {
     }
 }
 
+@Component
 public class TestRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
